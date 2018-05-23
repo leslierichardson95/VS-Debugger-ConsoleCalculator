@@ -18,7 +18,9 @@ double Calculator::Calculate(double number1, char operand, double number2)
 	case '/':
 		if (number2 == 0)
 			throw "DivideByZeroException";
-		answer = number1 / number2;
+		else
+			answer = number1 / number2;
+		break;
 	default:
 		answer = 0.0;
 	}
